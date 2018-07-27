@@ -437,12 +437,13 @@
 	function footerIntagram(){
         var feed = new Instafeed({
         	target: "footer-ig-stream",
-            get: "user",
+             get: "user",
+             sortBy: "most-recent",
             limit : 6,
             resolution: 'standard_resolution',
-            userId: 2159114835,
-            accessToken: "2159114835.9e667eb.7a37f9b944ea4023b94541c661cbf43d",
-            template: '<a href="{{image}}" class="mfp-ig-popup" data-effect="mfp-zoom-in" title="{{title}}"><img src="{{image}}" alt="{{caption}}"></a>',
+            userId: 8299736979,
+            accessToken: "8299736979.1677ed0.97e5218694c64fcc8c99cf1b66456896",
+            template: '<a href="{{image}}" class="mfp-ig-popup" style="color: #888888;" data-effect="mfp-zoom-in" title="{{title}}"><img src="{{image}}" alt="{{caption}}">{{caption}}</a>',
             after: function() {
             	$(".mfp-ig-popup").magnificPopup({
                     type: "image",
