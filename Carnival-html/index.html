@@ -60,15 +60,15 @@
                 <span class="nav-label">Eventos</span>
                 </a>
                 <ul class="sub-menu">
-                  <li><a href="#sabado11">Sábado 11</a></li>
-                  <li><a href="#domingo12">Domingo 12</a></li>
-                  <li><a href="#lunes13">Lunes 13</a></li>
-                  <li><a href="#martes14">Martes 14</a></li>
-                  <li><a href="#miercoles15">Miércoles 15</a></li>
-                  <li><a href="#jueves16">Jueves 16</a></li>
-                  <li><a href="#viernes17">Viernes 17</a></li>
-                  <li><a href="#sabado18">Sábado 18</a></li>
-                  <li><a href="#domingo19">Domingo 19</a></li>
+                  <li><a onClick="javascript: goEvent('sabado11');" href="#schedules" >Sábado 11</a></li>
+                  <li><a onClick="javascript: goEvent('domingo12');" href="#schedules" >Domingo 12</a></li>
+                  <li><a onClick="javascript: goEvent('lunes13');" href="#schedules" >Lunes 13</a></li>
+                  <li><a onClick="javascript: goEvent('martes14');" href="#schedules" >Martes 14</a></li>
+                  <li><a onClick="javascript: goEvent('miercoles15');" href="#schedules" >Miércoles 15</a></li>
+                  <li><a onClick="javascript: goEvent('jueves16');" href="#schedules" >Jueves 16</a></li>
+                  <li><a onClick="javascript: goEvent('viernes17');" href="#schedules" >Viernes 17</a></li>
+                  <li><a onClick="javascript: goEvent('sabado18');" href="#schedules" >Sábado 18</a></li>
+                  <li><a onClick="javascript: goEvent('domingo19');" href="#schedules" >Domingo 19</a></li>
                 </ul>
               </li>
               <li>
@@ -300,7 +300,7 @@
         <div class="flap-top-right"><img src="img/misc/flap-top-right.png" alt=""></div>
         <div class="flap-bottom-left"><img src="img/misc/flap-bottom-left.png" alt=""></div>
         <div class="container">
-          <div class="row">
+          <div class="row" id="schedules">
             <div class="col-xs-12 wow fadeInUp">
               <div class="section-title text-center mb-100">
                 <h2 class="h1 mb-25">Eventos</h2>
@@ -312,15 +312,15 @@
           <div class="row event-schedule">
             <nav class="col-xs-12 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6">
               <ul class="event-schedule-tab-nav flex flex-center disable-flex-xs mb-100 wow fadeInUp">
-                <li style="margin-right: 5px;" class="active"><a style="white-space: nowrap; padding: 0 15px;" href="#sabado11" data-toggle="tab">Sábado 11</a></li>
-                <li style="margin-right: 5px;"><a style="white-space: nowrap; padding: 0 15px;" href="#domingo12" data-toggle="tab">Domingo 12</a></li>
-                <li style="margin-right: 5px;"><a style="white-space: nowrap; padding: 0 15px;" href="#lunes13" data-toggle="tab">Lunes 13</a></li>
-                <li style="margin-right: 5px;"><a style="white-space: nowrap; padding: 0 15px;" href="#martes14" data-toggle="tab">Martes 14</a></li>
-                <li style="margin-right: 5px;"><a style="white-space: nowrap; padding: 0 15px;" href="#miercoles15" data-toggle="tab">Miércoles 15</a></li>
-                <li style="margin-right: 5px;"><a style="white-space: nowrap; padding: 0 15px;" href="#jueves16" data-toggle="tab">Jueves 16</a></li>
-                <li style="margin-right: 5px;"><a style="white-space: nowrap; padding: 0 15px;" href="#viernes17" data-toggle="tab">Viernes 17</a></li>
-                <li style="margin-right: 5px;"><a style="white-space: nowrap; padding: 0 15px;" href="#sabado18" data-toggle="tab">Sábado 18</a></li>
-                <li style="margin-right: 5px;"><a style="white-space: nowrap; padding: 0 15px;" href="#domingo19" data-toggle="tab">Domingo 19</a></li>
+                <li style="margin-right: 5px;" class="active"><a class="sabado11" style="white-space: nowrap; padding: 0 15px;" href="#sabado11" data-toggle="tab">Sábado 11</a></li>
+                <li style="margin-right: 5px;"><a class="domingo12"  style="white-space: nowrap; padding: 0 15px;" href="#domingo12" data-toggle="tab">Domingo 12</a></li>
+                <li style="margin-right: 5px;"><a class="lunes13"  style="white-space: nowrap; padding: 0 15px;" href="#lunes13" data-toggle="tab">Lunes 13</a></li>
+                <li style="margin-right: 5px;"><a class="martes14"  style="white-space: nowrap; padding: 0 15px;" href="#martes14" data-toggle="tab">Martes 14</a></li>
+                <li style="margin-right: 5px;"><a class="miercoles15"  style="white-space: nowrap; padding: 0 15px;" href="#miercoles15" data-toggle="tab">Miércoles 15</a></li>
+                <li style="margin-right: 5px;"><a class="jueves16"  style="white-space: nowrap; padding: 0 15px;" href="#jueves16" data-toggle="tab">Jueves 16</a></li>
+                <li style="margin-right: 5px;"><a class="viernes17"  style="white-space: nowrap; padding: 0 15px;" href="#viernes17" data-toggle="tab">Viernes 17</a></li>
+                <li style="margin-right: 5px;"><a class="sabado18"  style="white-space: nowrap; padding: 0 15px;" href="#sabado18" data-toggle="tab">Sábado 18</a></li>
+                <li style="margin-right: 5px;"><a class="domingo19" style="white-space: nowrap; padding: 0 15px;" href="#domingo19" data-toggle="tab">Domingo 19</a></li>
               </ul>
             </nav>
             <!-- Tab panes -->
@@ -640,7 +640,7 @@
                     <span class="col-xs-2 col-sm-2 col-md-2 border"></span>
                     <div class="col-xs-7 col-sm-6 col-sm-offset-1 col-md-7 col-md-offset-1 event-desc">
                       <div class="event-accordion">
-                        <h4 class="fz-20 text-dark fw-300 mb-5">Grupo Congregación Musical</h4>
+                        <h4 class="fz-20 text-dark fw-300 mb-5">Grupo Constelación Musical</h4>
                         <div class="accordion-body">
                   
                           
@@ -897,7 +897,16 @@
           if ( $(".site-content").hasClass("instagram") ) {
               document.write('<script src="js/instafeed.min.js"><\/script>');
           }
+
+
+
       })(jQuery);
+
+      function goEvent(eventId) {
+        console.log("entra");
+        $("."+eventId).trigger("click");
+      }
+
     </script>
     <script src="js/main.js"></script>
   </body>
