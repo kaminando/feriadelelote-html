@@ -25,6 +25,11 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/cpi-icons.css">
     <link rel="stylesheet" href="css/main.css">
+    <style>
+      #footer-ig-stream a {
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
     <header class="navbar-default site-header header-tp">
@@ -93,8 +98,8 @@
               <div class="banner-2-content">
                 <h2 class="text-light">Expo Culinaria del Elote y la Tortilla 2018</h2>
                 <p class="text-light">
-                  Atoles, esquites, chileatole, tamales, huitlacoche, pozole, quesadillas <br> 
-                  y tlacoyos, entre otros platillos, podrán ser degustados en la <br>
+                  Asiste con tu familia donde podrás degustar atoles, esquites, chileatole, tamales, huitlacoche, pozole, quesadillas, y tlacoyos, entre otros alimentos procedentes de los cultivos de tierra de la zona chinampera de Tláhuac.
+                  Estos y más platillos podrán ser degustados en la <br>
                   Feria del elote de <b>San Juan Ixtayopan</b>, en la delegación Tláhuac CDMX,<br>
                   que se realizará del 11 al 19 de agosto.
                 </p>
@@ -148,6 +153,27 @@
             <!-- //.col- -->
           </div>
           <!-- // .row -->
+
+  
+          <div class="row">
+            <br>
+            <div class="col-sx-12 col-sm-9 col-md-8 col-md-offset-1">
+              <br>
+              <span class="block primary-color fz-16 mb-25">Xilonen, diosa de los elotes tiernos</span>
+              <p class="text-justify">
+                Entre los Mexicas, la principal deidad relacionada con la plaanta del maíz era Centéotl, cuyo nombre significa "Dios mazorca madura", hijo de la deidad solar llamada Piltzinteuctli y de Xochiquétzal, diosa de la tierra húmeda y fértil. Centéotl tenía una contraparte femenina que recibía el nombre calendárico cd Chicomecóatl, 7 serpiente, diosa a la que usualmente se representa con el rostro pintado de rojo, un tocado de papel que semeja una estructura (tal vez un granero) y pares de mazorcas en ambas manos, que -según las fuentes- representaban el "corazón de los graneros", es decir las mazorcas bendecidas en la fiesta previa al inicio de la siembra. Asociada a Chicomecóatl se encontraba Xilonen, "muñeca de jilote" o jilote pequeño, diosa de los elotes tiernes del maíz, a la que se festejaba en los ritos previos a la primera cosecha.
+                <br><br>
+                <i>Fragmento del artículo "Los dioses del maíz" - Enrique Vela</i>
+              </p>
+            </div>
+            <div class="col-sx-12 col-sm-3 col-md-3 mb-xs-30 text-center">
+              <br><br>
+              <img src="img/custom/xilonen.jpg" class="img-responsive img-thumbnail" style="box-shadow: -3px 3px 5px 0px rgba(0,0,0,0.3);" alt="">
+            </div>
+          </div>
+
+
+
         </div>
         <!-- // .container -->
       </section>
@@ -903,7 +929,12 @@
       })(jQuery);
 
       function goEvent(eventId) {
-        console.log("entra");
+        const schedulesSection = $('#schedules');
+        $('html, body').stop().animate( {
+          'scrollTop':schedulesSection.offset().top-70
+            },  900, 'swing', function () {
+          //window.location.hash = target;
+        } );
         $("."+eventId).trigger("click");
       }
 
